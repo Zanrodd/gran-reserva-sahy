@@ -1,0 +1,20 @@
+GRAN RESERVA SAHY — SITE + PAINEL ADMIN
+
+Páginas:  /  (landing)   e   /admin  (painel com usuário e senha)
+
+COLOCAR NO AR (Netlify, grátis)
+1. Crie conta em netlify.com e suba esta pasta no GitHub (ou use o Netlify CLI: npm i -g netlify-cli; netlify deploy --prod).
+   Via GitHub: Add new site > Import from Git > escolha o repositório > Deploy.
+2. Em Site configuration > Environment variables, crie:
+     ADMIN_USER       = seu usuário (ex.: zan)
+     ADMIN_PASSWORD   = uma senha forte
+     SESSION_SECRET   = qualquer texto longo e aleatório
+3. Deploys > Trigger deploy (para valer as variáveis).
+4. Acesse seudominio/admin, entre e use.
+
+USO DO PAINEL
+- Lotes e preços: edite célula a célula, ou "Importar CSV" (mesmas colunas de "Baixar CSV atual"),
+  ou reajuste tudo em %.  Nada vai ao ar até clicar em "Publicar alterações".
+- Condições: percentual do ato, desconto à vista, textos, data de atualização.
+- Corretores: um link por corretor (/?c=joao) com o WhatsApp dele.
+- Cada publicação guarda a versão anterior como backup.
